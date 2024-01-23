@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Add Sample Code"
-        android:id="@+id/mysample"/>
+        android:id="@+id/mysampleme"/>
     <item android:title="Item"
         android:id="@+id/item"/>
 </menu>
