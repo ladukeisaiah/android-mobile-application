@@ -10,7 +10,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="200dp"
-        android:background="#03A9F4"
+        android:background="#C1B7D5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -35,23 +35,26 @@
                     android:id="@+id/titletext"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="second"></EditText>
+                    android:hint="vacation 1"></EditText>
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="third"></TextView>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="fourth"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="price: "></TextView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="fifth"></TextView>
+                <EditText
+                    android:id="@+id/pricetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:hint="price"></EditText>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
@@ -65,9 +68,16 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:drawable/ic_input_add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/excursionrecyclerview"
+        android:layout_width="409dp"
+        android:layout_height="430dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
