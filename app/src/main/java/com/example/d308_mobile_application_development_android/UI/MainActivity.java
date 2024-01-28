@@ -13,6 +13,8 @@ import com.example.d308_mobile_application_development_android.entities.Vacation
 
 public class MainActivity extends AppCompatActivity {
 
+    public static int numAlert;
+    public static int numAlert2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

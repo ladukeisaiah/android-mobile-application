@@ -8,8 +8,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="409dp"
-        android:layout_height="200dp"
+        android:layout_width="411dp"
+        android:layout_height="253dp"
         android:background="#C1B7D5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -56,6 +56,61 @@
                     android:hint="price"></EditText>
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="hotel: "></TextView>
+
+                <EditText
+                    android:id="@+id/hoteltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:hint="hotel name"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="start date: "></TextView>
+
+                <TextView
+                    android:id="@+id/startvacationdate"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:inputType="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="end date: "></TextView>
+
+                <TextView
+                    android:id="@+id/endvacationdate"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:inputType="none" />
+            </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
 
@@ -76,8 +131,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/excursionrecyclerview"
-        android:layout_width="409dp"
-        android:layout_height="430dp"
+        android:layout_width="412dp"
+        android:layout_height="389dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

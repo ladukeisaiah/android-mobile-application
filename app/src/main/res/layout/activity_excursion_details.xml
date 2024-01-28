@@ -6,4 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".UI.ExcursionDetails">
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-64dp"
+        tools:layout_editor_absoluteY="46dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Title"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/excursionTitle"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Price"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/excursionPrice"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Note"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/excursionnote"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Date"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:id="@+id/excursiondate"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
