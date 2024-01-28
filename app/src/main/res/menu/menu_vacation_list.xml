@@ -6,4 +6,6 @@
         android:id="@+id/mysampleme"/>
     <item android:title="Item"
         android:id="@+id/item"/>
+    <item android:title="Add Sample Excursions"
+        android:id="@+id/addSampleExcursions"/>
 </menu>

@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.d308_mobile_application_development_android.Database.Repository;
 import com.example.d308_mobile_application_development_android.R;
@@ -17,6 +16,8 @@ import com.example.d308_mobile_application_development_android.entities.Excursio
 import com.example.d308_mobile_application_development_android.entities.Vacation;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.time.Instant;
+import java.util.Date;
 import java.util.List;
 
 public class VacationList extends AppCompatActivity {
@@ -62,13 +63,13 @@ public class VacationList extends AppCompatActivity {
         repository=new Repository(getApplication());
         if(item.getItemId()==R.id.mysampleme) {
             //Toast.makeText(VacationList.this,"put in sample data", Toast.LENGTH_LONG).show();
-            Vacation vacation=new Vacation(0, "bicycle vacation", 100.0);
+            Vacation vacation=new Vacation(0, "bicycle vacation", 100.0, "Maryland Stay","02/20/24", "02/28/24");
             repository.insert(vacation);
-            vacation = new Vacation(0,"Hawaii", 600.0);
+            vacation = new Vacation(0,"Hawaii", 600.0,"Larabar Hotel","02/20/24", "02/28/24");
             repository.insert(vacation);
-            Excursion excursion = new Excursion(0, "Snorkeling", 200.0, 1);
+            Excursion excursion = new Excursion(0, "Snorkeling", 200.0, 1, "02/21/24");
             repository.insert(excursion);
-            excursion = new Excursion(0, "Sail Boatin'", 400.0, 1);
+            excursion = new Excursion(0, "Sail Boatin'", 400.0, 1, "02/21/24");
             repository.insert(excursion);
             return true;
         }
